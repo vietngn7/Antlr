@@ -11,7 +11,7 @@
 Заходим на этот [сайт](https://java.com/en/download/) и устанавливаем.
 
 ### IntelliJ IDEA 
-Нам понадобится данный инструмент для написания грамматики и построения дерево по этой грамматике.
+Нам понадобится данный инструмент для написания грамматики и построения дерева по этой грамматике.
 Для его установки потребуется создать аккаунт на сайте JetBrains [JetBrains Products for Learning](https://www.jetbrains.com/shop/eform/students) и скачать [IntelliJ IDEA](https://www.jetbrains.com/idea/).
 
 ### Плагин Antlr v4 для IDEA
