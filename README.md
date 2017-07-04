@@ -24,9 +24,7 @@
 6. Создаем новый  проект, добавляем в папку `scr` файл в формате `*.g4`  и пишем грамматику.
 
 
-## Напишем простой калькулятор на Antlr.
-........
-## Первый шаг
-Первым делом разберемся, что такое лексер и парсер. 
-
-To be continued…
+### Полезные материалы 
+1. [The ANTLR mega tutorial - Federico Tomassetti - Software Architect](https://tomassetti.me/antlr-mega-tutorial/#creating-a-grammar) очень хороший туториал по Antlr с кодом для C#.
+2. [antlr4/grammars.md at 4.6 · antlr/antlr4 · GitHub](https://github.com/antlr/antlr4/blob/4.6/doc/grammars.md) как писать грамматику
+3. Материалы Дворяна
