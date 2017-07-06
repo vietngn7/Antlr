@@ -36,12 +36,11 @@
 		1. Запустить Терминал (Terminal)
 ```
 	cd <path> # где path - путь к папке с грамматикой
-	java -jar antlr-4.5.3-complete.jar -Dlanguage=CSharp -o src <filename>.g4` # где filename - название вашей грамматики.`
+	java -jar antlr-4.5.3-complete.jar -Dlanguage=CSharp -o src <filename>.g4 # где filename - название вашей грамматики.
 ```
-4. В папке `scr` сгенерировались файлы для нашего C# проекта.
-5. Создать новый C# проект и добавить сгенерированные файлы к проекту.
-6. Загрузить [Antlr4.Runtime.dll](https://github.com/vietngn7/Antlr/raw/master/Antlr4.Runtime.dll) и подключить к его проекту.
-7. Реализовать интерфейс  `<grammar>BaseListener.cs`.
+4. Создать новый C# проект и добавить сгенерированные файлы из папки `scr` к проекту.
+5. Загрузить [Antlr4.Runtime.dll](https://github.com/vietngn7/Antlr/raw/master/Antlr4.Runtime.dll) и подключить к его проекту.
+6. Реализовать интерфейс  `<grammar>BaseListener.cs`.
 
 ### Полезные материалы 
 1. [The ANTLR mega tutorial - Federico Tomassetti - Software Architect](https://tomassetti.me/antlr-mega-tutorial/#creating-a-grammar) очень хороший туториал по Antlr с кодом для C#.
