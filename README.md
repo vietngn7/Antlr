@@ -44,10 +44,15 @@
 
 #### Зачем нужен класс Listener?
 Класс Listener нам понадобится для трансляции кода с <SomeLanguage> на C#.
+>Q11: Цепочка трансляции.
+>
+>A11:
 >Например, для транслятора для входного языка Basic (.bas):
+>
 >BasTranslator.g4[Grammar] => (ANTLR) => BasTranslator*.java => (javac) => BasTranslator.jar
 >
 >test1.bas=>(BasTranslator.jar[Translator])=>test1.cs=>(csc.exe)=>test1.exe
+>
 >test2.bas=>(BasTranslator.jar[Translator])=>test2.cs=>(csc.exe)=>test2.exe
 
 Пример реализация Listener [Яндекс.Диск](https://yadi.sk/d/8KJSyWHN3Khhd2)
