@@ -23,7 +23,7 @@
 5. Кликаем на *OK* в настройках и перезагружаем IntelliJ IDEA.
 6. Создаем новый  проект, добавляем в папку `scr` файл в формате `*.g4`  и пишем грамматику.
 ---
-### Генерация кода C#
+## Генерация кода C#
 Следующем шагом после написании грамматики является генерация кода для C#. Для этого необходимо
 1. Необходимо загрузить [Antlr-4.5.jar](https://github.com/vietngn7/Antlr/raw/master/antlr-4.5.3-complete.jar).
 2. Переместить его в папку с грамматикой (файл `.g4`).
@@ -42,8 +42,7 @@
 5. Загрузить [Antlr4.Runtime.dll](https://github.com/vietngn7/Antlr/raw/master/Antlr4.Runtime.dll) и подключить к его проекту.
 6. Реализовать интерфейс  `<grammar>BaseListener.cs`.
 
-#### Зачем нужен класс Listener?
-Класс Listener нам понадобится для трансляции кода с <SomeLanguage> на C#.
+Класс Listener нам понадобится для трансляции кода с `<SomeLanguage>` на C#.
 >Q11: Цепочка трансляции.
 >
 >A11:
@@ -58,7 +57,7 @@
 Пример реализация Listener [Яндекс.Диск](https://yadi.sk/d/8KJSyWHN3Khhd2)
 
 
-### Полезные материалы 
+## Полезные материалы 
 1. [The ANTLR mega tutorial - Federico Tomassetti - Software Architect](https://tomassetti.me/antlr-mega-tutorial/#creating-a-grammar) очень хороший туториал по Antlr с кодом для C#.
 2. [antlr4/grammars.md at 4.6 · antlr/antlr4 · GitHub](https://github.com/antlr/antlr4/blob/4.6/doc/grammars.md) как писать грамматику
 3. Материалы Дворяна
