@@ -25,16 +25,16 @@
 ---
 ### Генерация кода C#
 Следующем шагом после написании грамматики является генерация кода для C#. Для этого необходимо
-1. Скачать [Antlr-4.5.jar](https://github.com/vietngn7/Antlr/raw/master/antlr-4.5.3-complete.jar)
+1. Необходимо загрузить [Antlr-4.5.jar](https://github.com/vietngn7/Antlr/raw/master/antlr-4.5.3-complete.jar).
 2. Переместить его в папку с грамматикой (файл `.g4`).
 3. Сгенерировать файлы для C#
-  3.1. Windows: Создать текстовый файл `gen.bat`, вставить туда
+  * Windows: Создать текстовый файл `gen.bat`, вставить туда
   ``java -jar antlr-4.5.3-complete.jar -Dlanguage=CSharp -o src <filename>.g4``, где filename - название вашей грамматики.
   и запустить его.
-  3.2. macOS: Запустить терминал.
+  * macOS: Запустить терминал.
   
-3. Скачать данный dll для VS [Antlr4.Runtime.dll](https://github.com/vietngn7/Antlr/raw/master/Antlr4.Runtime.dll)
-4. Добавить
+4. Скачать данный dll для VS [Antlr4.Runtime.dll](https://github.com/vietngn7/Antlr/raw/master/Antlr4.Runtime.dll)
+5. Добавить
 
 ### Полезные материалы 
 1. [The ANTLR mega tutorial - Federico Tomassetti - Software Architect](https://tomassetti.me/antlr-mega-tutorial/#creating-a-grammar) очень хороший туториал по Antlr с кодом для C#.
