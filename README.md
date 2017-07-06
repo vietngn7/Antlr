@@ -42,6 +42,14 @@
 5. Загрузить [Antlr4.Runtime.dll](https://github.com/vietngn7/Antlr/raw/master/Antlr4.Runtime.dll) и подключить к его проекту.
 6. Реализовать интерфейс  `<grammar>BaseListener.cs`.
 
+#### Зачем нужен класс Listener?
+Класс Listener нам понадобится для трансляции кода с <SomeLanguage> на C#.
+>Например, для транслятора для входного языка Basic (.bas):
+>BasTranslator.g4[Grammar] => (ANTLR) => BasTranslator*.java => (javac) => BasTranslator.jar
+>
+>test1.bas=>(BasTranslator.jar[Translator])=>test1.cs=>(csc.exe)=>test1.exe
+>test2.bas=>(BasTranslator.jar[Translator])=>test2.cs=>(csc.exe)=>test2.exe
+
 Пример реализация Listener [Яндекс.Диск](https://yadi.sk/d/8KJSyWHN3Khhd2)
 
 
