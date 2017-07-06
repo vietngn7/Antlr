@@ -28,13 +28,20 @@
 1. Необходимо загрузить [Antlr-4.5.jar](https://github.com/vietngn7/Antlr/raw/master/antlr-4.5.3-complete.jar).
 2. Переместить его в папку с грамматикой (файл `.g4`).
 3. Сгенерировать файлы для C#
-  * Windows: Создать текстовый файл `gen.bat`, вставить туда
-  ``java -jar antlr-4.5.3-complete.jar -Dlanguage=CSharp -o src <filename>.g4``, где filename - название вашей грамматики.
-  и запустить его.
-  * macOS: Запустить терминал.
-  
-4. Скачать данный dll для VS [Antlr4.Runtime.dll](https://github.com/vietngn7/Antlr/raw/master/Antlr4.Runtime.dll)
-5. Добавить
+	1. *Windows*
+		1. Создать в папке с грамматикой текстовой файл `gen.bat` .
+		2. Вставить туда `java -jar antlr-4.5.3-complete.jar -Dlanguage=CSharp -o src <filename>.g4`, где filename - название вашей грамматики.`
+		3. Запустить `gen.bat`.
+	2. *macOS*
+		1. Запустить Терминал (Terminal)
+```
+	cd <path> # где path - путь к папке с грамматикой
+	java -jar antlr-4.5.3-complete.jar -Dlanguage=CSharp -o src <filename>.g4` # где filename - название вашей грамматики.`
+```
+4. В папке `scr` сгенерировались файлы для нашего C# проекта.
+5. Создать новый C# проект и добавить сгенерированные файлы к проекту.
+6. Загрузить [Antlr4.Runtime.dll](https://github.com/vietngn7/Antlr/raw/master/Antlr4.Runtime.dll) и подключить к его проекту.
+7. Реализовать интерфейс  `<grammar>BaseListener.cs`.
 
 ### Полезные материалы 
 1. [The ANTLR mega tutorial - Federico Tomassetti - Software Architect](https://tomassetti.me/antlr-mega-tutorial/#creating-a-grammar) очень хороший туториал по Antlr с кодом для C#.
